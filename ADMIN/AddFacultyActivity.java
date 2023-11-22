@@ -89,6 +89,8 @@ public class AddFacultyActivity extends AppCompatActivity {
 
 //                getSelectedCheckboxValues();
 
+
+                //checking if the field is empty
                 if (username.equals("")) {
                     Utils.showToast(getApplicationContext(), "Enter username");
                 } else if (name.equals("")) {
