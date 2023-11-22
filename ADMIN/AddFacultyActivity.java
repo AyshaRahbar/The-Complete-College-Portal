@@ -159,13 +159,16 @@ public class AddFacultyActivity extends AppCompatActivity {
         }
     }
 
+    // We are adding method for checkbox
     public void addCheckBoxes(String subjects) {
+        // Split the subjects string into an array of individual subjects
         String[] temp = subjects.split("\\,");
         for (int i = 0; i < temp.length; i++) {
             CheckBox checkBox = new CheckBox(this);
             checkBox.setText(temp[i]);
             checkBox.setId(View.generateViewId());
             checkBoxeList.add(checkBox);
+            // Add the CheckBox to the LinearLayout
             llSubjects.addView(checkBox);
         }
     }
